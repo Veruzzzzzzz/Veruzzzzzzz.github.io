@@ -1,7 +1,7 @@
 // Função para listar todas as vendas
 async function listarTodasVendas() {
     try {
-        const response = await fetch('http://localhost:3000/api/vendas');
+        const response = await fetch('https://veruzzzzzzz-github-io.onrender.com/api/vendas');
         
         if (!response.ok) {
             throw new Error('Erro ao buscar vendas');
