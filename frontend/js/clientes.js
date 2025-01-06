@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://veruzzzzzzz-github-io.onrender.com/api';
 
 // Função para mostrar mensagens de erro ou sucesso
 function showMessage(message, isError = false) {
