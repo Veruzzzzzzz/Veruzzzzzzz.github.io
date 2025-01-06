@@ -10,6 +10,11 @@ const PORT = 3000;
 
 
 app.use(express.static('./frontend'));
+app.listen(3000, '127.0.0.1', function(){
+
+    console.log('Server rodando.');
+
+});
 // Configuração do CORS mais permissiva para desenvolvimento
 app.use(cors({
     origin: '*',
