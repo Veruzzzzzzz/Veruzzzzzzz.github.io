@@ -9,7 +9,7 @@ const app = express();
 const PORT = 3000;
 
 
-app.use(express.static('./frontend/pages'));
+app.use(express.static('./frontend'));
 // Configuração do CORS mais permissiva para desenvolvimento
 app.use(cors({
     origin: '*',
