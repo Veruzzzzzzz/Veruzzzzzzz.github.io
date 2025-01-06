@@ -87,6 +87,8 @@ app.use((err, req, res, next) => {
 // Sincronizar banco de dados e iniciar servidor
 sequelize.sync()
     .then(() => {
-        console.log('Banco de dados sincronizado');
+        app.listen(PORT, '127.0.0.1', function(){
+            console.log(`Server rodando na porta ${PORT}`);
+        });
     })
-    .catch(err => console.log('Erro ao sincronizar banco:', err)); 
+    .catch(err => console.log('Erro ao sincronizar banco:', err));  
