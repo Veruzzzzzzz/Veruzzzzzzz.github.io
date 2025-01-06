@@ -9,7 +9,7 @@ async function buscarVenda() {
     }
 
     try {
-        const response = await fetch(`http://localhost:3000/api/vendas/${id}`);
+        const response = await fetch(`https://veruzzzzzzz-github-io.onrender.com/api/vendas/${id}`);
         const venda = await response.json();
 
         if (!response.ok) {
