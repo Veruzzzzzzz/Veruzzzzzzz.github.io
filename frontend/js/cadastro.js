@@ -12,7 +12,7 @@ document.getElementById('cadastroForm').addEventListener('submit', async (e) => 
     }
 
     try {
-        const response = await fetch('http://localhost:3000/api/usuarios/cadastro', {
+        const response = await fetch('https://veruzzzzzzz-github-io.onrender.com/api/usuarios/cadastro', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ nome, email, senha })
