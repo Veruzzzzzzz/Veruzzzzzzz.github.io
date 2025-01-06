@@ -1,6 +1,6 @@
 async function carregarGrafico() {
     try {
-        const response = await fetch('http://localhost:3000/api/vendas');
+        const response = await fetch('https://veruzzzzzzz-github-io.onrender.com/api/vendas');
         const vendas = await response.json();
 
         const dadosPorMes = vendas.reduce((acc, venda) => {
