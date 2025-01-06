@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 const sequelize = new Sequelize({
     host: 'dpg-cttk7otds78s73cok1qg-a',
     dialect: 'postgres',
-    user: 'veruzbancodedados_user',
+    username: 'veruzbancodedados_user',  // Mudado de 'user' para 'username'
     port: 5432,
     password: 'sXXUxmXNvJQszKYreukIUlInIX5pk8WZ',
     database: 'veruzbancodedados',
