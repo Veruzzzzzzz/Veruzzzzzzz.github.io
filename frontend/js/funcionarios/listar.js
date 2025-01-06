@@ -10,7 +10,7 @@ function formatarMoeda(valor) {
 async function listarFuncionarios() {
     try {
         // Buscar funcionários
-        const resFuncionarios = await fetch('http://localhost:3000/api/funcionarios');
+        const resFuncionarios = await fetch('https://veruzzzzzzz-github-io.onrender.com/api/funcionarios');
         const funcionarios = await resFuncionarios.json();
 
         // Buscar todas as vendas
