@@ -6,7 +6,13 @@ const sequelize = new Sequelize({
     user: 'veruzbancodedados_user',
     port: 5432,
     password: 'sXXUxmXNvJQszKYreukIUlInIX5pk8WZ',
-    database: 'veruzbancodedados'
+    database: 'veruzbancodedados',
+    dialectOptions: {
+        ssl: {
+            require: true,
+            rejectUnauthorized: false
+        }
+    }
 });
 
 module.exports = sequelize;
