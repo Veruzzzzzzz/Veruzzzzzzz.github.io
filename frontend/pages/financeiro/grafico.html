@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico Financeiro</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="../index.html">Início</a> > 
+            Gráfico Financeiro
+        </nav>
+        
+        <h1>Gráfico Financeiro</h1>
+
+        <div class="chart-container" style="position: relative; height:60vh; width:80vw; margin: auto;">
+            <canvas id="graficoVendas"></canvas>
+        </div>
+
+        <div class="form-actions">
+            <button type="button" class="btn-secondary" onclick="window.location.href='../index.html'">Voltar</button>
+        </div>
+    </div>
+    
+    <script src="../../js/financeiro/grafico.js"></script>
+</body>
+</html> 

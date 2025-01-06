@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Venda</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="../index.html">Início</a> > 
+            <a href="index.html">Vendas</a> > 
+            Buscar
+        </nav>
+        <h1>Buscar Venda</h1>
+        <div class="search-container">
+            <div class="form-group">
+                <label for="vendaId">ID da Venda:</label>
+                <input type="number" id="vendaId" min="1">
+                <button onclick="buscarVenda()" class="btn-primary">Buscar</button>
+            </div>
+        </div>
+        <div id="resultadoBusca" class="result-container">
+            <!-- Resultado será mostrado aqui -->
+        </div>
+        <div class="form-actions">
+            <button type="button" class="btn-secondary" onclick="window.location.href='index.html'">Voltar</button>
+        </div>
+    </div>
+    <script src="../../js/listar-um.js"></script>
+</body>
+</html> 

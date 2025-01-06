@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Funcionário</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="../index.html">Início</a> > 
+            <a href="index.html">Funcionários</a> > 
+            Buscar
+        </nav>
+        <h1>Buscar Funcionário</h1>
+        <div class="search-container">
+            <div class="form-group">
+                <label for="funcionarioId">ID do Funcionário:</label>
+                <input type="number" id="funcionarioId" min="1">
+                <button onclick="buscarFuncionario()" class="btn-primary">Buscar</button>
+            </div>
+        </div>
+        <div id="resultadoBusca" class="result-container">
+            <!-- Resultado será mostrado aqui -->
+        </div>
+        <div class="form-actions">
+            <button type="button" class="btn-secondary" onclick="window.location.href='index.html'">Voltar</button>
+        </div>
+    </div>
+    <script src="../../js/funcionarios.js"></script>
+</body>
+</html> 

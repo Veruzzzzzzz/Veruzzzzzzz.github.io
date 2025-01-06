@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir Funcionário</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="../index.html">Início</a> > 
+            <a href="index.html">Funcionários</a> > 
+            Excluir
+        </nav>
+        <h1>Excluir Funcionário</h1>
+        <div class="search-container">
+            <div class="form-group">
+                <label for="funcionarioId">ID do Funcionário:</label>
+                <input type="number" id="funcionarioId" min="1">
+                <button onclick="buscarFuncionarioParaExcluir()" class="btn-primary">Buscar</button>
+                <button class="btn-secondary" onclick="window.location.href='index.html'">Voltar</button>
+            </div>
+        </div>
+        <div id="funcionarioInfo" class="info-container" style="display: none;">
+            <!-- Informações do funcionário serão mostradas aqui -->
+        </div>
+    </div>
+    <script src="../../js/funcionarios.js"></script>
+</body>
+</html> 

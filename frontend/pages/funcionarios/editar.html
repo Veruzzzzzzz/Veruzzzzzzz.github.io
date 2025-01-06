@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Funcionário</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="../index.html">Início</a> > 
+            <a href="index.html">Funcionários</a> > 
+            Editar
+        </nav>
+        <h1>Editar Funcionário</h1>
+        <div class="search-container">
+            <div class="form-group">
+                <label for="funcionarioId">ID do Funcionário:</label>
+                <input type="number" id="funcionarioId" min="1">
+                <button onclick="buscarFuncionarioParaEditar()" class="btn-primary">Buscar</button>
+                <button class="btn-secondary" onclick="window.location.href='index.html'">Voltar</button>
+            </div>
+        </div>
+        <form id="editarFuncionarioForm" class="form-container" style="display: none;">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" name="cargo" required>
+            </div>
+            <div class="form-group">
+                <label for="salario">Salário:</label>
+                <input type="number" id="salario" name="salario" step="0.01" required>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn-primary">Salvar</button>
+                <button type="button" class="btn-secondary" onclick="window.location.href='index.html'">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    <script src="../../js/funcionarios.js"></script>
+</body>
+</html> 

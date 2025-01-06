@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir Produto</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="../index.html">Início</a> > 
+            <a href="index.html">Produtos</a> > 
+            Excluir
+        </nav>
+        <h1>Excluir Produto</h1>
+        <div class="search-container">
+            <div class="form-group">
+                <label for="produtoId">ID do Produto:</label>
+                <input type="number" id="produtoId" min="1">
+                <button onclick="buscarProdutoParaExcluir()" class="btn-primary">Buscar</button>
+                <button class="btn-secondary" onclick="window.location.href='index.html'">Voltar</button>
+            </div>
+        </div>
+        <div id="produtoInfo" class="info-container" style="display: none;">
+            <!-- Informações do produto serão mostradas aqui -->
+        </div>
+    </div>
+    <script src="../../js/produtos.js"></script>
+</body>
+</html> 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Produto</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="../index.html">Início</a> > 
+            <a href="index.html">Produtos</a> > 
+            Editar
+        </nav>
+        <h1>Editar Produto</h1>
+        <div class="search-container">
+            <div class="form-group">
+                <label for="produtoId">ID do Produto:</label>
+                <input type="number" id="produtoId" min="1">
+                <button onclick="buscarProdutoParaEditar()" class="btn-primary">Buscar</button>
+                <button class="btn-secondary" onclick="window.location.href='index.html'">Voltar</button>
+            </div>
+        </div>
+        <form id="editarProdutoForm" class="form-container" style="display: none;">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="preco">Preço:</label>
+                <input type="number" id="preco" name="preco" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="estoque">Estoque:</label>
+                <input type="number" id="estoque" name="estoque" required>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn-primary">Salvar</button>
+                <button type="button" class="btn-secondary" onclick="window.location.href='index.html'">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    <script src="../../js/produtos.js"></script>
+</body>
+</html> 
