@@ -6,15 +6,11 @@ const bcrypt = require('bcrypt');
 const Usuario = require('./models/Usuario');
 
 const app = express();
-const PORT = 3000;
-
+// Usar a porta do Render OU 3000 localmente
+const PORT = process.env.PORT || 3000;
 
 app.use(express.static('./frontend'));
-app.listen(PORT, '127.0.0.1', function(){
 
-    console.log('Server rodando.');
-
-});
 // Configuração do CORS mais permissiva para desenvolvimento
 app.use(cors({
     origin: '*',
@@ -91,9 +87,6 @@ app.use((err, req, res, next) => {
 // Sincronizar banco de dados e iniciar servidor
 sequelize.sync()
     .then(() => {
-        app.listen(PORT, () => {
-            console.log(`Servidor rodando na porta ${PORT}`);
-        });
+        console.log('Banco de dados sincronizado');
     })
     .catch(err => console.log('Erro ao sincronizar banco:', err)); 
-    
