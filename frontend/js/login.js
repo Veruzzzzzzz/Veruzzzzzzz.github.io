@@ -11,7 +11,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     }
 
     try {
-        const response = await fetch('http://localhost:3000/api/usuarios/login', {
+        const response = await fetch('https://veruzzzzzzz-github-io.onrender.com/api/usuarios/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, senha })
